@@ -2,7 +2,7 @@ import docs from "../assets/docs.svg"
 import coffee from "../assets/coffee.svg"
 import screen from "../assets/screen.svg"
 import Feature from "./Feature"
-import { Container, SimpleGrid } from "@chakra-ui/react";
+import { Container, SimpleGrid } from "@chakra-ui/react"
 
 const Features = () => {
   const features = [
@@ -25,12 +25,12 @@ const Features = () => {
   return (
     <Container as="section" maxW="container.lg" py="10">
       <SimpleGrid columns={[1, null, 3]} gap="8">
-      {features.map((el, index) => {
-        return <Feature key={index} {...el}></Feature>;
-      })}
+        {features.map((el, index) => {
+          return <Feature key={index} {...el}></Feature>
+        })}
       </SimpleGrid>
     </Container>
-  );
+  )
 }
 
 export default Features
